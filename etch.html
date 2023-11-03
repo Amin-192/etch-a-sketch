@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+    <div class="cotainer min-h-screen min-w-screen  relative left-[20%] "> 
+<div>
+    <h1 class="text-red-500 text-lg font-bold">WELCOME TO MY SKETCH PAD</h1>
+</div>
+<div class="content">
+
+</div>
+<div id="board" class="w-[700px] h-[500px] grid shadow-2xl ">
+
+</div>
+<div class="buttons">
+    <button onclick="changeColor('black')" class="p-3 bg-black text-white shadow-2xl rounded-2xl mt-2 mb-2 text-lg "> Black</button>
+    <button onclick="changeColor('white')" class="p-3 bg-white shadow-2xl rounded-2xl mt-2 mb-2 text-lg ">Eraser</button>
+    <button onclick="changeColor('red')" class="p-3  shadow-2xl rounded-2xl mt-2 mb-2 text-lg bg-red-500 ">RED</button>
+    
+    <button onclick="(changeColor('random'))" class="p-3 bg-gradient-to-r from-green-200 via-stone-300 to-blue-300 shadow-2xl rounded-2xl mt-2 mb-2 text-lg ">Random </button>
+    <button onclick="resetBoard()" class="p-3 bg-white shadow-2xl rounded-2xl mt-2 mb-2 text-lg ">reset</button>
+</div>
+<div>
+    <input type="text" class="rounded-2xl p-2 "  placeholder="set size" onchange="changeSize(this.value) "  value="16"/>
+    <button class="p-3 bg-white shadow-2xl rounded-2xl mt-2 mb-2 text-lg ">Set Size</button>
+</div>
+    </div>
+</div>
+
+    <script src="etch.js"></script>
+</body>
+</html>
